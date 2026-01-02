@@ -1315,7 +1315,7 @@ button:not(:disabled) {
 /* Control card height */
 #a6685618956 .vendor-container[data-v-7e6b6157] {
   width: 100%;
-  max-height: 320px;          /* 🔧 adjust this value */
+  max-height: 300px;          /* 🔧 adjust this value */
   aspect-ratio: unset;        /* stop tall cards */
   overflow: hidden;           /* keep image inside */
 }
