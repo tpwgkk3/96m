@@ -1308,4 +1308,37 @@ button:not(:disabled) {
   width: 100% !important;
   flex: none !important;
 }
+/* =====================================
+   IMAGE SCROLL INSIDE CARD (FINAL)
+===================================== */
+
+/* Vendor card height control */
+#a6685618956 .vendor-container[data-v-7e6b6157] {
+  width: 100%;
+  height: 280px;          /* 🔧 adjust card height here */
+  overflow-y: auto;       /* ✅ scroll INSIDE card */
+  overflow-x: hidden;
+  position: relative;
+  border-radius: 12px;    /* optional */
+}
+
+/* Remove previous ratio forcing */
+#a6685618956 .vendor-container[data-v-7e6b6157] {
+  aspect-ratio: unset !important;
+  padding-top: 0 !important;
+}
+
+/* Image stays natural height */
+#a6685618956 .vendor-item[data-v-7e6b6157] {
+  width: 100%;
+  height: auto;
+}
+
+/* Image itself */
+#a6685618956 .vendor-icon[data-v-7e6b6157] {
+  width: 100%;
+  height: auto;           /* allow tall image */
+  display: block;
+  object-fit: contain;
+}
 
