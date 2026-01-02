@@ -1261,13 +1261,13 @@ button:not(:disabled) {
 }
 /* Correct ratio for 400x614 images */
 #a6685618956 .vendor-container[data-v-7e6b6157] {
-  padding-top: 153%;
+  padding-top: 306%;
 }
 
 /* Image fits perfectly */
 #a6685618956 .vendor-icon[data-v-7e6b6157] {
-  width: 100%;
-  height: 100%;
+  width: 150%;
+  height: 150%;
   object-fit: contain;
 }
 
