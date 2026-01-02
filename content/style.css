@@ -267,10 +267,7 @@ img {
 }
 
 #a6685618956 .vendor-container[data-v-7e6b6157] {
-  position: relative;
-  width: 100%;
-  padding-top: 151.23%; /* EXACT for 406x614 */
-  overflow: hidden;
+  padding-top: 151.23%; /* for 406x614 */
 }
 
 
@@ -291,8 +288,7 @@ img {
 #a6685618956 .vendor-icon[data-v-7e6b6157] {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* no crop */
-  display: block;
+  object-fit: contain;
 }
 
 #a6685618956.a69531983 .vendor-icon[data-v-7e6b6157] {
