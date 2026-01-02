@@ -1309,36 +1309,6 @@ button:not(:disabled) {
   flex: none !important;
 }
 /* =====================================
-   ONE SCROLL BOX FOR ALL IMAGES (FINAL)
-===================================== */
-
-/* OUTER WRAPPER — defines scroll box */
-#a6685618956 .wrap[data-v-7a05651889] {
-  height: 70vh;        /* height of the image box */
-  overflow-y: auto;       /* ONE scrollbar */
-  overflow-x: hidden;
-}
-
-/* Vendor list stays inside the box */
-#a6685618956 .vendor-list[data-v-7a05651889] {
-  width: 100%;
-}
-
-/* Cards keep proper height */
-#a6685618956 .vendor-container[data-v-7e6b6157] {
-  width: 100%;
-  aspect-ratio: 406 / 614;
-  position: relative;
-}
-
-/* Images fit card */
-#a6685618956 .vendor-icon[data-v-7e6b6157] {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
-}
-/* =====================================
    FORCE SINGLE SCROLL BOX (FIXED)
 ===================================== */
 
@@ -1369,4 +1339,3 @@ button:not(:disabled) {
   object-fit: contain;
   display: block;
 }
-
