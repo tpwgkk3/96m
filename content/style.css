@@ -1248,3 +1248,25 @@ button:not(:disabled) {
 	text-align: center;
 	font-size: 14px;
 }
+/* Correct container height */
+#a6685618956 .vendor-container[data-v-7e6b6157] {
+  position: relative;
+  width: 100%;
+  padding-top: 151.23%;
+  overflow: visible;
+}
+
+/* Ensure row spacing */
+#a6685618956 .vendor-list .col {
+  padding-left: 6px !important;
+  padding-right: 6px !important;
+  margin-bottom: 12px;
+}
+
+/* Image fits container */
+#a6685618956 .vendor-icon[data-v-7e6b6157] {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
