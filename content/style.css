@@ -1290,3 +1290,22 @@ button:not(:disabled) {
   position: relative;
   display: block;
 }
+/* ================================
+   REMOVE LEFT SIDEBAR (FILTER / POPULAR)
+================================ */
+
+/* Hide sidebar */
+#a6685618956 .filter-container[data-v-7a039684165] {
+  display: none !important;
+}
+
+/* Let vendor list take full width */
+#a6685618956 .wrap[data-v-7a05651889] {
+  display: block !important;
+}
+
+#a6685618956 .vendor-list[data-v-7a05651889] {
+  width: 100% !important;
+  flex: none !important;
+}
+
