@@ -1273,6 +1273,6 @@ button:not(:disabled) {
 
 /* tighter spacing */
 #a6685618956 .vendor-list .col {
-  padding-left: 6px !important;
-  padding-right: 6px !important;
+  padding-left: 3px !important;
+  padding-right: 3px !important;
 }
