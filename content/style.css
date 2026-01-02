@@ -290,16 +290,12 @@ img {
 }
 
 #a6685618956 .vendor-icon[data-v-7e6b6157] {
-	position: absolute;
-	width: 96%;
-	height: 96%;
-	-o-object-fit: contain;
-	object-fit: contain;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* or contain if you prefer */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #a6685618956.a69531983 .vendor-icon[data-v-7e6b6157] {
