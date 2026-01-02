@@ -1308,4 +1308,23 @@ button:not(:disabled) {
   width: 100% !important;
   flex: none !important;
 }
+/* ================================
+   LIMIT IMAGE HEIGHT (SCROLL PAGE)
+================================ */
+
+/* Control card height */
+#a6685618956 .vendor-container[data-v-7e6b6157] {
+  width: 100%;
+  max-height: 320px;          /* 🔧 adjust this value */
+  aspect-ratio: unset;        /* stop tall cards */
+  overflow: hidden;           /* keep image inside */
+}
+
+/* Image scales inside container */
+#a6685618956 .vendor-icon[data-v-7e6b6157] {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;        /* show full image */
+  display: block;
+}
 
