@@ -1259,3 +1259,9 @@ button:not(:disabled) {
 	text-align: center;
 	font-size: 14px;
 }
+
+#a6685618956 .vendor-list .col {
+  padding-left: 4px !important;
+  padding-right: 4px !important;
+}
+
