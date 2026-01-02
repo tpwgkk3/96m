@@ -1309,36 +1309,29 @@ button:not(:disabled) {
   flex: none !important;
 }
 /* =====================================
-   IMAGE SCROLL INSIDE CARD (FINAL)
+   ONE SCROLL BOX FOR ALL IMAGES
 ===================================== */
 
-/* Vendor card height control */
-#a6685618956 .vendor-container[data-v-7e6b6157] {
-  width: 100%;
-  height: 280px;          /* 🔧 adjust card height here */
-  overflow-y: auto;       /* ✅ scroll INSIDE card */
+/* Vendor list becomes scroll container */
+#a6685618956 .vendor-list[data-v-7a05651889] {
+  max-height: 520px;     /* 🔧 adjust scroll area height */
+  overflow-y: auto;      /* ✅ ONE scrollbar here */
   overflow-x: hidden;
-  position: relative;
-  border-radius: 12px;    /* optional */
+  padding-right: 6px;    /* space for scrollbar */
 }
 
-/* Remove previous ratio forcing */
+/* Each card normal height */
 #a6685618956 .vendor-container[data-v-7e6b6157] {
-  aspect-ratio: unset !important;
-  padding-top: 0 !important;
-}
-
-/* Image stays natural height */
-#a6685618956 .vendor-item[data-v-7e6b6157] {
   width: 100%;
-  height: auto;
+  aspect-ratio: 406 / 614;
+  position: relative;
 }
 
-/* Image itself */
+/* Image fits card */
 #a6685618956 .vendor-icon[data-v-7e6b6157] {
   width: 100%;
-  height: auto;           /* allow tall image */
-  display: block;
+  height: 100%;
   object-fit: contain;
+  display: block;
 }
 
