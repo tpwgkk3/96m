@@ -1314,7 +1314,7 @@ button:not(:disabled) {
 
 /* Vendor list becomes scroll container */
 #a6685618956 .vendor-list[data-v-7a05651889] {
-  max-height: 520px;     /* 🔧 adjust scroll area height */
+  max-height: 420px;     /* 🔧 adjust scroll area height */
   overflow-y: auto;      /* ✅ ONE scrollbar here */
   overflow-x: hidden;
   padding-right: 6px;    /* space for scrollbar */
