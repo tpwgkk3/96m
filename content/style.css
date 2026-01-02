@@ -291,8 +291,8 @@ img {
 
 #a6685618956 .vendor-icon[data-v-7e6b6157] {
 	position: absolute;
-	width: 96%;
-	height: 96%;
+	width: 50%;
+	height: 50%;
 	-o-object-fit: contain;
 	object-fit: contain;
 	top: 50%;
@@ -1261,7 +1261,7 @@ button:not(:disabled) {
 }
 /* Correct ratio for 400x614 images */
 #a6685618956 .vendor-container[data-v-7e6b6157] {
-  padding-top: 306%;
+  padding-top: 151.2%; /* 614 / 406 × 100 */
 }
 
 /* Image fits perfectly */
