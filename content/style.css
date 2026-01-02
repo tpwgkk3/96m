@@ -1252,20 +1252,3 @@ button:not(:disabled) {
 	text-align: center;
 	font-size: 14px;
 }
-/* Correct ratio for 400x614 images */
-#a6685618956 .vendor-container[data-v-7e6b6157] {
-  padding-top: 151.2%; /* 614 / 406 × 100 */
-}
-
-/* Image fits perfectly */
-#a6685618956 .vendor-icon[data-v-7e6b6157] {
-  width: 150%;
-  height: 150%;
-  object-fit: contain;
-}
-
-/* tighter spacing */
-#a6685618956 .vendor-list .col {
-  padding-left: 3px !important;
-  padding-right: 3px !important;
-}
