@@ -1309,33 +1309,46 @@ button:not(:disabled) {
   flex: none !important;
 }
 /* =====================================
-   FORCE SINGLE SCROLL BOX (FIXED)
+   IMAGE SCROLLING BOX (FINAL CLEAN)
 ===================================== */
 
-#a6685618956 .wrap[data-v-7a05651889] {
+/* Main wrapper becomes the scroll box */
+#a6685618956.a69531983 .wrap[data-t-a905615981] {
   display: block !important;
-  height: 70vh;          /* FORCE height */
-  overflow-y: auto;     /* ENABLE scrolling */
+  height: 70vh;              /* height of the image box */
+  overflow-y: auto;          /* ONE scrollbar */
   overflow-x: hidden;
-  flex: none !important; /* BREAK flex stretching */
+  flex: none !important;     /* break flex stretching */
 }
 
-/* Vendor list stays inside */
-#a6685618956 .vendor-list[data-v-7a05651889] {
-  width: 100%;
+/* Vendor list stays inside the box */
+#a6685618956.a69531983 .wrap .vendor-list[data-t-a905615981] {
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
 }
 
-/* Vendor card height preserved */
-#a6685618956 .vendor-container[data-v-7e6b6157] {
+/* Image card container — keeps correct ratio */
+#a6685618956 .vendor-container[data-t-a892616951] {
   width: 100%;
+  padding-top: 0 !important;
   aspect-ratio: 406 / 614;
   position: relative;
+  margin-bottom: 12px;       /* space between rows */
 }
 
-/* Image fits card */
-#a6685618956 .vendor-icon[data-v-7e6b6157] {
+/* Remove absolute positioning that breaks layout */
+#a6685618956 .vendor-item[data-t-a892616951],
+#a6685618956 .vendor-icon[data-t-a892616951] {
+  position: static !important;
+  transform: none !important;
+}
+
+/* Image fits nicely inside card */
+#a6685618956 .vendor-icon[data-t-a892616951] {
   width: 100%;
   height: 100%;
   object-fit: contain;
   display: block;
+  border-radius: 15px;
 }
