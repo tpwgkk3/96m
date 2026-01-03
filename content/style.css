@@ -1259,3 +1259,10 @@ button:not(:disabled) {
 	text-align: center;
 	font-size: 14px;
 }
+/* === FORCE DARK BACKGROUND === */
+body,
+body #a6685618956,
+#a6685618956 .bg {
+	background-color: #000 !important;
+	color: #fff;
+}
