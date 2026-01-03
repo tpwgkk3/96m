@@ -194,8 +194,8 @@ img {
 
 #a6685618956.a69531983 .wrap .type-filter[data-v-7a05651889],
 #a6685618956.a69531983 .wrap .vendor-list[data-v-7a05651889] {
-	height: auto;
-	max-height: none;
+	height: 500px;
+	max-height: 500px;
 	overflow-y: auto;
 }
 
@@ -216,7 +216,7 @@ img {
 	-ms-flex-direction: column;
 	flex-direction: column;
 	padding: 0 8px;
-	width: 120px;
+	width: 147px;
 	max-width: 35%;
 	-webkit-box-align: center;
 	-ms-flex-align: center;
@@ -266,21 +266,40 @@ img {
 	background-position: center;
 }
 
+#a6685618956 .vendor-container[data-v-7e6b6157] {
+	padding-top: 62%;
+	position: relative;
+	width: 100%;
+}
+
+#a6685618956.a69531983 .vendor-container[data-v-7e6b6157] {
+	padding-top: 100%;
+}
+
 #a6685618956 .disable[data-v-7e6b6157] {
 	-webkit-filter: grayscale(1);
 	filter: grayscale(1);
 }
 
 #a6685618956 .vendor-item[data-v-7e6b6157] {
-  position: static;
-  inset: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
 }
 
 #a6685618956 .vendor-icon[data-v-7e6b6157] {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
+	position: absolute;
+	width: 96%;
+	height: 96%;
+	-o-object-fit: contain;
+	object-fit: contain;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	border-radius: 8px;
 }
 
 #a6685618956.a69531983 .vendor-icon[data-v-7e6b6157] {
@@ -1239,116 +1258,4 @@ button:not(:disabled) {
 	width: 100%;
 	text-align: center;
 	font-size: 14px;
-}
-
-#a6685618956 .vendor-icon[data-v-7e6b6157] {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
-}
-
-#a6685618956.a69531983 .wrap .vendor-list[data-v-7a05651889] {
-  height: auto !important;
-  max-height: none !important;
-  overflow-y: auto;
-}
-
-
-#a6685618956 .vendor-list .col {
-  margin-bottom: 12px;
-}
-/* FIX OVERLAP PERMANENTLY */
-#a6685618956 .vendor-container[data-v-7e6b6157] {
-  width: 100%;
-  aspect-ratio: 406 / 614;
-  display: flex;
-}
-
-#a6685618956 .vendor-item[data-v-7e6b6157] {
-  position: static;
-  width: 100%;
-  height: 100%;
-}
-
-#a6685618956 .vendor-icon[data-v-7e6b6157] {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
-}
-
-#a6685618956 .vendor-list {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 12px;
-}
-/* ✅ FINAL VENDOR CARD LAYOUT */
-#a6685618956 .vendor-container[data-v-7e6b6157] {
-  width: 100%;
-  aspect-ratio: 406 / 614;
-  position: relative;
-  display: block;
-}
-/* ================================
-   REMOVE LEFT SIDEBAR (FILTER / POPULAR)
-================================ */
-
-/* Hide sidebar */
-#a6685618956 .filter-container[data-v-7a039684165] {
-  display: none !important;
-}
-
-/* Let vendor list take full width */
-#a6685618956 .wrap[data-v-7a05651889] {
-  display: block !important;
-}
-
-#a6685618956 .vendor-list[data-v-7a05651889] {
-  width: 100% !important;
-  flex: none !important;
-}
-/* =====================================
-   IMAGE SCROLLING BOX (FINAL CLEAN)
-===================================== */
-
-/* Main wrapper becomes the scroll box */
-#a6685618956.a69531983 .wrap[data-t-a905615981] {
-  display: block !important;
-  height: 70vh;              /* height of the image box */
-  overflow-y: auto;          /* ONE scrollbar */
-  overflow-x: hidden;
-  flex: none !important;     /* break flex stretching */
-}
-
-/* Vendor list stays inside the box */
-#a6685618956.a69531983 .wrap .vendor-list[data-t-a905615981] {
-  height: auto !important;
-  max-height: none !important;
-  overflow: visible !important;
-}
-
-/* Image card container — keeps correct ratio */
-#a6685618956 .vendor-container[data-t-a892616951] {
-  width: 100%;
-  padding-top: 0 !important;
-  aspect-ratio: 406 / 614;
-  position: relative;
-  margin-bottom: 12px;       /* space between rows */
-}
-
-/* Remove absolute positioning that breaks layout */
-#a6685618956 .vendor-item[data-t-a892616951],
-#a6685618956 .vendor-icon[data-t-a892616951] {
-  position: static !important;
-  transform: none !important;
-}
-
-/* Image fits nicely inside card */
-#a6685618956 .vendor-icon[data-t-a892616951] {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
-  border-radius: 15px;
 }
